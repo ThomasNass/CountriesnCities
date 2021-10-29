@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button:hover{
+background-color: rgba(250, 162, 162, 0.4) ;
+}
+
+button:active{
+   background-color: rgba(133, 86, 86, 0.4) ; 
+}
+
+html{
+     background-image:url(world.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lists{
+
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    display: flex;
+    align-self: center;
+    padding: 2%;
+     background-color:rgba(255,255,255,0.7)
+}
+
+.div{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin: 0 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+.city{
+    display: none;
+}
+
+.display{ 
+   display: none;
+}
+
+.on-display{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 5%;
+}
+
+.visited{
+   display: none;
+}
+
+
+.visited-city p{
+    margin-top: 5px;
+}
+
+.visited-city button{
+margin-top: 8%;
+}
+
+button{
+    margin: 2px;
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1000px ) {
+.container{ 
+    height: auto; 
+    display: flex;
+}
+
+    .lists{
+    height: max-content;
+    flex-direction: column;
+    display: flex;
+    align-self: center; 
+     background-color:rgba(255,255,255,0);
+}
+
+.div{
+    flex-direction: column;
+    display: flex;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+
+.city{
+    display: none;
+}
+
+.display{ 
+   display: none;
+}
+
+.visited{
+   display: none;
+}
+
+.visited-city, .on-display{
+    color:white;
+}
+
+}
